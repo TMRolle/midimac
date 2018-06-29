@@ -13,7 +13,7 @@ map<string,string> handlerList;
 int values[5];
 
 
-//function to parse list of paired controllers strings and handler programs. Handlers may optionally use $MIDIVAL[x] to get the actual values
+//function to parse list of paired controllers strings and handler programs. Handlers may optionally use $1/$2/$3/etc. to get the actual values
 void parseCalls(string conf) {
 	string dev,handler;
 	ifstream handlerFile (conf.c_str());
